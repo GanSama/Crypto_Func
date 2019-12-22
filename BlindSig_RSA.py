@@ -1,6 +1,6 @@
 # File Name : BlindSig_RSA.py
 # Description : Illustrate a simple RSA blind signature
-# Author : Ganyuan Cao]
+# Author : Ganyuan Cao
 
 
 import random
@@ -41,7 +41,7 @@ def main():
     
     print "This program illustare a simple RSA blind signature"
     print "---------------------------------------------------"
-    print "This program use unrealisticly short RSA key. It is just for a demo of blind signature"
+    print "This program use unrealistically short RSA key. It is just for a demo of blind signature"
     print "---------------------------------------------------------------------------------------"
     sig, m_e = sign(m,e,d,n)
     verify(sig, e, n, m_e)
