@@ -2,9 +2,9 @@
 # Description : implement some number  theory functions 
 # Author : Ganyuan Cao
 
-# gcd
+# gcd (Greateest Common Divisor)
 def gcd(a, b): 
-    if (a == 0): 
+    if a == 0: 
         return b 
     return gcd(b % a, a) 
 
@@ -19,18 +19,59 @@ def eulerphi(n):
 
 # modular inverse (iterative search)
 def modInv_iter(a,n):
-    a = a%n
-    for x in range(1, m) : 
-        if ((a * x) % m == 1) : 
+    
+    # mod inverse exist iff gcd = 1
+    if gcd(a,n) != 1:
+        print "Modular Inverse DNE"
+        return
+
+    # a mod n
+    a = a % n
+    
+    # perform iterative test to find the modular inverse 
+    for x in range(1, n) : 
+        if (a * x) % n == 1 : 
             return x 
     return 1
 
 # modular inverse (Extended Euclidean)
+def modInv_ExEuclid(a,n):
 
-def modInv_Euclid(a,n):
-    return 0
+    # mod inverse exist iff gcd = 1
+    if gcd(a,n) != 1:
+        print "Modular Inverse DNE"
+        return
+    
+    n0 = n
+    y = 0
+    x = 1
 
+    # trivial case...
+    if m == 1:
+        return 0
 
+    while a > 1: 
+
+        #obtain the quotient q
+        q = a // n
+        tmp = n
+
+        #update m for euclidean algorithm
+        n = a % n
+        a = tmp
+        tmp = y
+
+        # update x & y
+        y = x - q * y
+        x = tmp
+
+    # change x to positive value 
+    if x < 0:
+        x = x+ n0
+    
+    return x
+
+# main() here
 def main():
     result = gcd(10,5)
     print result

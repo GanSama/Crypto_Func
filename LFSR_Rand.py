@@ -14,7 +14,7 @@ def lfsr_gen(init, tap, n):
 
 
     # iteratively fill the LFSR list
-    while(exp_length <= n):
+    while exp_length <= n:
         for i in range(0, tap_length):
             curr_sum = curr_sum + tap[i] * new_lfsr[exp_length - (tap_length + 1) + i]
 
