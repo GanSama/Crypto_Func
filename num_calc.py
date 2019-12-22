@@ -9,10 +9,15 @@ def gcd(a, b):
     return gcd(b % a, a) 
 
 # Euler's totient function
+def eulerphi(n):
+    result = 0
+    for i in range(1,n):
+        if gcd(a,n) == 1:
+            result = result + 1
+    return result
 
 
 # modular inverse (iterative search)
-
 def modInv_iter(a,n):
     a = a%n
     for x in range(1, m) : 
@@ -23,3 +28,12 @@ def modInv_iter(a,n):
 # modular inverse (Extended Euclidean)
 
 def modInv_Euclid(a,n):
+    return 0
+
+
+def main():
+    result = gcd(10,5)
+    print result
+
+if __name__ == "__main__":
+    main()
