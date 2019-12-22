@@ -12,7 +12,7 @@ def gcd(a, b):
 def eulerphi(n):
     result = 0
     for i in range(1,n):
-        if gcd(a,n) == 1:
+        if gcd(i,n) == 1:
             result = result + 1
     return result
 
@@ -73,7 +73,7 @@ def modInv_ExEuclid(a,n):
 
 # main() here
 def main():
-    result = gcd(10,5)
+    result = eulerphi(10)
     print result
 
 if __name__ == "__main__":

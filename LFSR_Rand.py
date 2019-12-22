@@ -2,8 +2,6 @@
 # Description : implement a simple LFSR random number generator
 # Author : Ganyuan Cao
 
-import math
-
 def lfsr_gen(init, tap, n):
 
     new_lfsr = init
@@ -31,7 +29,7 @@ def lfsr_gen(init, tap, n):
 def convRandom(lfsr_seq):
     num = 0
     for i in range(0, len(lfsr_seq)):
-        num = num + lfsr_seq[i] * int(math.pow(2,i))
+        num = num + lfsr_seq[i] * (2 ** i)
     return num
 
 

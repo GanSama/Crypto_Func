@@ -3,7 +3,6 @@
 # Author : Ganyuan Cao
 
 import random
-import math
 
 # check if p is blum prime
 def blumprime(p):
@@ -70,7 +69,7 @@ def bbsAlgorithm(limit):
         
         tmp = x_i
         
-        expo = int(math.pow(2,i))
+        expo = 2 ** i
         result = result + z_i * expo
         
         tmp_seq = [z_i]
