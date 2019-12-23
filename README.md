@@ -9,13 +9,13 @@
 #    
 
 ## Filename Explanation
-<code>BBS_Rand.py</code>: BBS Random Number Generator.    
-<code>BlindSig_RSA.py</code>: Implement a simple RSA blind signature.     
-<code>bsgs.gp</code>: Baby-Step-Giant-Step algorithm for multiplicative group and elliptic curves.    
-<code>ecfunc.gp</code>: Check if a point is on an elliptic curve and find the roots of an ellipti curve.    
-<code>lfsr.gp</code>: linear feedback shift register.     
-<code>LFSR_Rand.py</code>: a simple LFSR random number generator
-<code>num_calc.py</code>: some functions to do number theory calculation
-<code>pminus1.gp</code>: p-1 factorization.    
-<code>pollardrho.gp</code>: Pollard rho for discrete log problem in multiplicative group and elliptic curves.     
+<code>BBS_Rand.py</code>: BBS Random Number Generator.        
+<code>BlindSig_RSA.py</code>: Implement a simple RSA blind signature.        
+<code>bsgs.gp</code>: Baby-Step-Giant-Step algorithm for multiplicative group and elliptic curves.       
+<code>ecfunc.gp</code>: Check if a point is on an elliptic curve and find the roots of an ellipti curve.       
+<code>lfsr.gp</code>: linear feedback shift register.        
+<code>LFSR_Rand.py</code>: a simple LFSR random number generator.    
+<code>num_calc.py</code>: some functions to do number theory calculation.   
+<code>pminus1.gp</code>: p-1 factorization.      
+<code>pollardrho.gp</code>: Pollard rho for discrete log problem in multiplicative group and elliptic curves.        
   
