@@ -16,6 +16,13 @@ def eulerphi(n):
             result = result + 1
     return result
 
+# modular arithmetic
+def mod(a,n):
+    if a > n:
+        return a%n
+    else:
+        return a
+
 
 # modular inverse (iterative search)
 def modInv_iter(a,n):
